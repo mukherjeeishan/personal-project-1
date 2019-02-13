@@ -1,0 +1,42 @@
+<div class="carsContainer">
+
+        <div class="carsBox">
+
+        <img  class="image" src="/images/{{vehicleImage}}" alt="">
+        <br>
+        Brand:{{brandName}}
+          <br>
+          Model:{{Model}}
+          <br> 
+          Year:{{year}}
+        </div>
+
+ <form method="POST" action="/cars/{{id}}">
+  Brand:
+  <input type="text"  name="brand" >
+  <br>
+  
+  Model:
+  <input type="text" name="model">
+  <br>
+
+  Year:
+  <input type="text" name="year">
+  <br>
+
+  <input type="submit" name="" value="Submit">
+</form>
+
+
+<form method="POST" action="/cars/{{id}}">
+<br>
+<br>
+<br>
+<br>
+  <input type="submit" class="btn btn-danger" value="Delete">
+</form>
+
+
+    
+
+    </div>  

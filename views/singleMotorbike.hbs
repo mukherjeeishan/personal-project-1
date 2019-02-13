@@ -1,0 +1,35 @@
+<div class="carsContainer">
+
+        <div class="carsBox">
+          <div class="card bg-light mb-3 border-dark mb-3" style="max-width:25rem;">
+
+        <img  class="image" class="card-img-top" src="/images/{{vehicleImage}}" alt="">
+        <br>
+       <div class="card-text" >
+        Brand:{{brandName}}
+          <br>
+          Model:{{Model}}
+          <br>
+          Year:{{year}}
+        </div>
+</div>
+</div>
+
+ <form method="POST" action="/motorbikes/{{id}}">
+  Brand:
+  <input type="text"  name="brand" >
+  <br>
+  
+  Model:
+  <input type="text" name="model">
+  <br>
+
+  Year:
+  <input type="text" name="year">
+  <br>
+
+  <input type="submit" name="Update" class="btn btn-success" value="Update">
+  <br>
+  <input type="submit" name="delete" class="btn btn-danger" value="Delete">
+</form>
+</div>
